@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     fileprivate lazy var timeCounterView: TimeCounterView = {
-        let timeCounterView = TimeCounterView(time: "00:00:10")
+        let timeCounterView = TimeCounterView(time: "10:10:10")
         return timeCounterView
     }()
 

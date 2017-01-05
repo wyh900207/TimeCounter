@@ -111,6 +111,7 @@ extension TimeCounterView {
 
 // MARK: - Private methods
 extension TimeCounterView {
+
     fileprivate func updateTime() {
         let times = separatedTime()
 
@@ -124,32 +125,34 @@ extension TimeCounterView {
     }
 
     @objc fileprivate func timerFire() {
+        let timeTuple = (hourTime, minuteTime, secondTime)
 
-        if secondTime > 0 {
+        switch timeTuple {
+        case (0...24, 0...59, 1...59):
             secondTime -= 1
-            secondTimeView.time = secondTime
-        } else {
-            if minuteTime > 0 {
-                minuteTime -= 1
-                secondTime += 59
-                secondTimeView.time = secondTime
-                minuteTimeView.time = minuteTime
-            } else {
-                if hourTime > 0 {
-                    hourTime -= 1
-                    minuteTime += 59
-                    secondTime += 59
-                    secondTimeView.time = secondTime
-                    minuteTimeView.time = minuteTime
-                    hourTimeView.time = hourTime
-                } else {
-                    timer?.invalidate()
-                    time = "00:00:00"
-                    updateTime()
-                    print("倒计时结束")
-                }
-            }
+            updateSubViews()
+        case (0...24, 1...59, 0):
+            minuteTime -= 1
+            secondTime += 59
+            updateSubViews()
+        case (1...24, 0, 0):
+            hourTime -= 1
+            minuteTime += 59
+            secondTime += 59
+            updateSubViews()
+        case (0, 0, 0):
+            timer?.invalidate()
+            print("倒计时结束")
+        default:
+            timer?.invalidate()
+            print("输入的时间格式不正确")
         }
+    }
+
+    fileprivate func updateSubViews() { // 更新3个时间子控件的时间属性
+        secondTimeView.time = secondTime
+        minuteTimeView.time = minuteTime
+        hourTimeView.time = hourTime
     }
 
     fileprivate func separatedTime() -> (hourTime: Int, minuteTime: Int, secondTime: Int) {

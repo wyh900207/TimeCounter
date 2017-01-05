@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "4A38AD6C4DD70ABA44682F5A6A185D4EC2A94B69",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "4A38AD6C4DD70ABA44682F5A6A185D4EC2A94B69" : 9223372036854775807,
+    "8ED8860C218E0E3DF31284A95CDB1EB9E909E7F4" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E567949E-C8AF-4B17-9A19-7BA4E8EE4812",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "4A38AD6C4DD70ABA44682F5A6A185D4EC2A94B69" : "EnumTest\/",
+    "8ED8860C218E0E3DF31284A95CDB1EB9E909E7F4" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "EnumTest",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "EnumTest.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/wyh900207\/TimeCounter.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4A38AD6C4DD70ABA44682F5A6A185D4EC2A94B69"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/git.coding.net\/honghu\/DateCounter.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8ED8860C218E0E3DF31284A95CDB1EB9E909E7F4"
+    }
+  ]
+}
