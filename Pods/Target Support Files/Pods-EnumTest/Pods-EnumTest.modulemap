@@ -1,0 +1,6 @@
+framework module Pods_EnumTest {
+  umbrella header "Pods-EnumTest-umbrella.h"
+
+  export *
+  module * { export * }
+}
