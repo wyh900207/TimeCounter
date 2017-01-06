@@ -30,6 +30,7 @@ class TimeCounterView: UIView {
         let leftColon = UILabel()
         leftColon.text = ":"
         leftColon.font = UIFont.boldSystemFont(ofSize: 30)
+        leftColon.backgroundColor = UIColor.white
         leftColon.textAlignment = .center
         return leftColon
     }()
@@ -38,6 +39,7 @@ class TimeCounterView: UIView {
         let rightColon = UILabel()
         rightColon.text = ":"
         rightColon.font = UIFont.boldSystemFont(ofSize: 30)
+        rightColon.backgroundColor = UIColor.white
         rightColon.textAlignment = .center
         return rightColon
     }()
